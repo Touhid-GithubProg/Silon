@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'roboto' , sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* *****Top Header***** */
+.top-header {
+  background-color: #fef7f6;
+  height: 5rem;
+}
+
+.top-header .top-head-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.top-header .top-head-wrapper .phone, .top-header .top-head-wrapper .email {
+  text-transform: uppercase;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.top-header .top-head-wrapper .site-settings {
+  text-transform: uppercase;
+}
+
+.top-header .top-head-wrapper .site-settings .gift, .top-header .top-head-wrapper .site-settings .track, .top-header .top-head-wrapper .site-settings .lang {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-right: 2rem;
+}
+
+.top-header .top-head-wrapper .site-settings :nth-child(3) {
+  padding-right: 0rem;
+}
+
+/* *****Main Header***** */
+.main-header {
+  height: 9rem;
+}
+
+.main-header .main-head-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.main-header .main-head-wrapper .nav-area {
+  display: flex;
+}
+
+.main-header .main-head-wrapper .nav-area li a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  transition: .3s;
+}
+
+.main-header .main-head-wrapper .nav-area li a:hover {
+  color: #ff5353;
+}
+
+.main-header .main-head-wrapper .icons-area .search i, .main-header .main-head-wrapper .icons-area .cart i, .main-header .main-head-wrapper .icons-area .heart i {
+  color: black;
+  padding: 0 1rem;
+  transition: .3s;
+}
+
+.main-header .main-head-wrapper .icons-area .search i:hover, .main-header .main-head-wrapper .icons-area .cart i:hover, .main-header .main-head-wrapper .icons-area .heart i:hover {
+  color: #ff5353;
+}
