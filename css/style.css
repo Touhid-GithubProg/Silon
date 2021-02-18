@@ -12,6 +12,12 @@ ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 /* *****Top Header***** */
 .top-header {
   background-color: #fef7f6;
@@ -84,4 +90,42 @@ ul {
 
 .main-header .main-head-wrapper .icons-area .search i:hover, .main-header .main-head-wrapper .icons-area .cart i:hover, .main-header .main-head-wrapper .icons-area .heart i:hover {
   color: #ff5353;
+}
+
+/* *****Banner Area***** */
+.banner-area {
+  background: url("../img/banner-bg-1.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.banner-area .banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-area .banner-text .tagline {
+  color: #565656;
+  text-transform: uppercase;
+  letter-spacing: .28rem;
+}
+
+.banner-area .banner-text .shop-btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #FF5353;
+  color: #fff;
+  border: none;
+  padding: 2rem 5rem;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  transition: .3s;
+}
+
+.banner-area .banner-text .shop-btn:hover {
+  color: #0056b3;
+  background-color: #fff;
 }
