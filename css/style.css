@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  font-family: 'roboto' , sans-serif;
+  font-size: 10px;
+  font-family: "roboto", sans-serif;
 }
 
 ul {
@@ -31,7 +33,8 @@ img {
   height: 100%;
 }
 
-.top-header .top-head-wrapper .phone, .top-header .top-head-wrapper .email {
+.top-header .top-head-wrapper .phone,
+.top-header .top-head-wrapper .email {
   text-transform: uppercase;
   padding-right: 2rem;
   font-size: 1.2rem;
@@ -42,7 +45,9 @@ img {
   text-transform: uppercase;
 }
 
-.top-header .top-head-wrapper .site-settings .gift, .top-header .top-head-wrapper .site-settings .track, .top-header .top-head-wrapper .site-settings .lang {
+.top-header .top-head-wrapper .site-settings .gift,
+.top-header .top-head-wrapper .site-settings .track,
+.top-header .top-head-wrapper .site-settings .lang {
   color: black;
   font-size: 1.2rem;
   font-weight: 300;
@@ -54,15 +59,11 @@ img {
 }
 
 /* *****Main Header***** */
-.main-header {
-  height: 9rem;
-}
-
 .main-header .main-head-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: 9rem;
 }
 
 .main-header .main-head-wrapper .nav-area {
@@ -75,20 +76,24 @@ img {
   color: black;
   text-transform: uppercase;
   padding: 0 1rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .main-header .main-head-wrapper .nav-area li a:hover {
   color: #ff5353;
 }
 
-.main-header .main-head-wrapper .icons-area .search i, .main-header .main-head-wrapper .icons-area .cart i, .main-header .main-head-wrapper .icons-area .heart i {
+.main-header .main-head-wrapper .icons-area .search i,
+.main-header .main-head-wrapper .icons-area .cart i,
+.main-header .main-head-wrapper .icons-area .heart i {
   color: black;
   padding: 0 1rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.main-header .main-head-wrapper .icons-area .search i:hover, .main-header .main-head-wrapper .icons-area .cart i:hover, .main-header .main-head-wrapper .icons-area .heart i:hover {
+.main-header .main-head-wrapper .icons-area .search i:hover,
+.main-header .main-head-wrapper .icons-area .cart i:hover,
+.main-header .main-head-wrapper .icons-area .heart i:hover {
   color: #ff5353;
 }
 
@@ -109,23 +114,105 @@ img {
 .banner-area .banner-text .tagline {
   color: #565656;
   text-transform: uppercase;
-  letter-spacing: .28rem;
+  letter-spacing: 0.28rem;
 }
 
 .banner-area .banner-text .shop-btn {
   font-size: 1.4rem;
   font-weight: 600;
-  background-color: #FF5353;
+  letter-spacing: 0.2rem;
+  background-color: #ff5353;
   color: #fff;
   border: none;
   padding: 2rem 5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   text-transform: uppercase;
-  margin-top: 2.5rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .banner-area .banner-text .shop-btn:hover {
   color: #0056b3;
   background-color: #fff;
+}
+
+/* *****Product Area***** */
+.product-area {
+  padding: 5.5rem 0rem;
+}
+
+.product-area .row {
+  text-align: center;
+  padding-top: 6.5rem;
+}
+
+.product-area .row .col-4 .product-img {
+  padding-bottom: 2.5rem;
+}
+
+.product-area .row .col-4 .product-title {
+  color: #888;
+}
+
+.product-area .row .col-4 .ratings {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+
+.product-area .row .col-4 .ratings .star {
+  padding: 0 0.3rem;
+  color: #ff5353;
+}
+
+.product-area .row .col-4 .price {
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 73.75em) {
+  /* 1180px =- */
+  html,
+  body {
+    font-size: 9px;
+  }
+  .banner-area .banner-text .site-title {
+    font-size: 4.5rem;
+  }
+  .banner-area .banner-text .shop-btn {
+    padding: 1.5rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 55em) {
+  /* 880px =- */
+  .main-head-wrapper .nav-area {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 24%;
+    background-color: #fff;
+    width: 100%;
+    z-index: 2;
+  }
+  .main-head-wrapper .nav-area .nav-item {
+    padding: 1rem 0;
+  }
+  .banner-area .row .banner-text .tagline {
+    font-size: 1.2rem;
+  }
+  .banner-area .row .banner-text .site-title {
+    font-size: 3.4rem;
+  }
+  .banner-area .row .banner-text .shop-btn {
+    font-size: 1.2rem;
+    padding: 1.4rem 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 33.75em) {
+  /* 540px =- */
+  .banner-area .banner-text {
+    order: 2;
+  }
+  .banner-area .banner-img {
+    order: 1;
+  }
 }

@@ -1,117 +1,215 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'roboto' , sans-serif;
+html,
+body {
+  font-size: 10px;
+  font-family: "roboto", sans-serif;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-img{
-    width: 100%;
-    height: 100%;
-    display: block;
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 /* *****Top Header***** */
-.top-header{
-    background-color: #fef7f6;
-    height: 5rem;
-    .top-head-wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        .phone,.email{
-            text-transform: uppercase;
-            padding-right: 2rem;
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
-        .site-settings{
-            text-transform: uppercase;
-            .gift,.track,.lang{
-                color: black;
-                font-size: 1.2rem;
-                font-weight: 300;
-                padding-right: 2rem;
-            }
-            :nth-child(3){
-                padding-right: 0rem;
-            }
-        }
+.top-header {
+  background-color: #fef7f6;
+  height: 5rem;
+  .top-head-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .phone,
+    .email {
+      text-transform: uppercase;
+      padding-right: 2rem;
+      font-size: 1.2rem;
+      font-weight: 300;
     }
+    .site-settings {
+      text-transform: uppercase;
+      .gift,
+      .track,
+      .lang {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding-right: 2rem;
+      }
+      :nth-child(3) {
+        padding-right: 0rem;
+      }
+    }
+  }
 }
 
 /* *****Main Header***** */
-.main-header{
+.main-header {
+  .main-head-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 9rem;
-    .main-head-wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        .nav-area{
-            display: flex;
-            li{
-                a{
-                    font-size: 1.4rem;
-                    font-weight: 500;
-                    color: black;
-                    text-transform: uppercase;
-                    padding: 0 1rem;
-                    transition: .3s;
-                    &:hover{
-                        color: #ff5353;
-                    }
-                }
-            }
+    // overflow: hidden;
+    .nav-area {
+      display: flex;
+      li {
+        a {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: black;
+          text-transform: uppercase;
+          padding: 0 1rem;
+          transition: 0.3s;
+          &:hover {
+            color: #ff5353;
+          }
         }
-        .icons-area{
-            .search,.cart,.heart{
-                i{
-                    color: black;
-                    padding: 0 1rem;
-                    transition: .3s;
-                    &:hover{
-                        color: #ff5353;
-                    }
-                }
-            }
-        }
+      }
     }
+    .icons-area {
+      .search,
+      .cart,
+      .heart {
+        i {
+          color: black;
+          padding: 0 1rem;
+          transition: 0.3s;
+          &:hover {
+            color: #ff5353;
+          }
+        }
+      }
+    }
+  }
 }
 /* *****Banner Area***** */
-.banner-area{
-    background: url('../img/banner-bg-1.jpg') no-repeat;
-    background-size: cover;
-    width: 100%;
-    .banner-text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        .tagline{
-            color: #565656;
-            text-transform: uppercase;
-            letter-spacing: .28rem;
-        }
-        .shop-btn{
-            font-size: 1.4rem;
-            font-weight: 600;
-            background-color: #FF5353;
-            color: #fff;
-            border: none;
-            padding: 2rem 5rem;
-            border-radius: .5rem;
-            text-transform: uppercase;
-            margin-top: 2.5rem;
-            transition: .3s;
-            &:hover{
-                color: #0056b3;
-                background-color: #fff;
-            }
-        }
+.banner-area {
+  background: url("../img/banner-bg-1.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .tagline {
+      color: #565656;
+      text-transform: uppercase;
+      letter-spacing: 0.28rem;
     }
+    .shop-btn {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      background-color: #ff5353;
+      color: #fff;
+      border: none;
+      padding: 2rem 5rem;
+      border-radius: 0.5rem;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover {
+        color: #0056b3;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+/* *****Product Area***** */
+.product-area {
+  padding: 5.5rem 0rem;
+  .row {
+    text-align: center;
+    padding-top: 6.5rem;
+    .col-4 {
+      .product-img {
+        padding-bottom: 2.5rem;
+      }
+      .product-title {
+        color: #888;
+      }
+      .ratings {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0rem;
+        .star {
+          padding: 0 0.3rem;
+          color: #ff5353;
+        }
+      }
+      .price {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 73.75em) {
+  /* 1180px =- */
+  html,
+  body {
+    font-size: 9px;
+  }
+  .banner-area {
+    .banner-text {
+      .site-title {
+        font-size: 4.5rem;
+      }
+      .shop-btn {
+        padding: 1.5rem 3rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 55em) {
+  /* 880px =- */
+  .main-head-wrapper{
+      .nav-area{
+          flex-direction: column;
+          text-align: center;
+          margin-top: 24%;
+          background-color: #fff;
+          width: 100%;
+          z-index: 2;
+          .nav-item{
+            padding: 1rem 0;
+          }
+      }
+  }
+  .banner-area {
+    .row {
+      .banner-text {
+        .tagline {
+          font-size: 1.2rem;
+        }
+        .site-title {
+          font-size: 3.4rem;
+        }
+        .shop-btn {
+          font-size: 1.2rem;
+          padding: 1.4rem 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 33.75em) {
+  /* 540px =- */
+  .banner-area {
+    .banner-text {
+      order: 2;
+    }
+    .banner-img {
+      order: 1;
+    }
+  }
 }
